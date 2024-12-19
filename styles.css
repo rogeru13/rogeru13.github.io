@@ -1,0 +1,59 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-gap: 20px; /* Equal spacing */
+  width: 80%;
+  margin: 0 auto; /* Center the grid */
+}
+
+/* Grid Items (Rectangles) */
+.grid-item {
+  background-color: #ddd;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 200px; /* Rectangle Height */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.grid-item:hover {
+  background-color: #bbb;
+  color: #fff;
+}
