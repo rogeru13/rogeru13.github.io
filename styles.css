@@ -1,59 +1,66 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* custom properties from github */
 
-/* Body Styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Header Styling */
-header {
-  margin-bottom: 40px;
-}
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
-p {
-  font-size: 1.2rem;
-  color: #555;
+/* HEADER STUFF */
+.header .container {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;      
 }
 
-/* Grid Container */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-gap: 20px; /* Equal spacing */
-  width: 80%;
-  margin: 0 auto; /* Center the grid */
+.header .container ul{
+  display: flex;   
+  list-style: none;
+  gap: 70px;
+  justify-content: flex-end;
 }
 
-/* Grid Items (Rectangles) */
-.grid-item {
-  background-color: #ddd;
-  color: #333;
+/* HERO STUFF */
+
+.hero .container{
+  background-color: lightblue;
+  padding: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  height: 200px; /* Rectangle Height */
-  transition: background-color 0.3s ease;
 }
 
-/* Hover Effect */
-.grid-item:hover {
-  background-color: #bbb;
-  color: #fff;
+.hero-text { text-align: center; }
+
+/* rectangle class */
+
+/* .rectangle {
+  width: 70px;               
+  height: 40px;               
+  border: 2px solid #000;     
+  display: flex;               
+  background-color: #ffffff;   
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 
+} */
+
+.grid-container {
+  --num-cols: 2;
+  --row-height:420px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+  
+  border: 2px solid black;
+
+  /* grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr); */
+}
+
+.grid-container > img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
 }

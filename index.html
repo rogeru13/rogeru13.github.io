@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Explore my content, projects, experiences, and learn more about me.</p>
-  </header>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>rogeru.</title>
 
-  <!-- Grid Layout -->
-  <section class="grid-container">
-    <!-- Content -->
-    <div class="grid-item" style="background-color: #FFADAD;">
-      <a href="content.html">
-        <div class="placeholder-text">Content</div>
-      </a>
-    </div>
-    <!-- Projects -->
-    <div class="grid-item" style="background-color: #FFD6A5;">
-      <a href="projects.html">
-        <div class="placeholder-text">Projects</div>
-      </a>
-    </div>
-    <!-- Experiences -->
-    <div class="grid-item" style="background-color: #CAFFBF;">
-      <a href="experiences.html">
-        <div class="placeholder-text">Experiences</div>
-      </a>
-    </div>
-    <!-- About Me -->
-    <div class="grid-item" style="background-color: #9BF6FF;">
-      <a href="about.html">
-        <div class="placeholder-text">About Me</div>
-      </a>
-    </div>
-  </section>
+      <!----Preloads images-->
+      <link rel="preload" as="image" href="portfolio-images/mainphoto.HEIC">
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2024 Your Name. All Rights Reserved.
-  </footer>
-</body>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="https://solo.to/rogeru" class ="logo">
+           <img src="portfolio-images/wood.jpg"
+           width = "50">
+        </a>
+        <!-- <nav class="navbar" data-navbar> -->
+
+        <ul class="navbar-list">
+          <li>
+            <a href = "#" class="navbar-link">home</a>
+          </li>
+          <li>
+            <a href = "#" class="navbar-link">projects</a>
+          </li>
+          <li>
+            <a href = "#" class="navbar-link">experiences</a>
+          </li>
+
+      </div>
+    </header>
+    
+    <main>
+      <article>
+        <section class = "section hero" aria-label= "home">
+          <div class="container">
+            <figure class="cover">
+              <img src="portfolio-images/mainphoto.png" alt="cover"
+              width = '200' >
+            </figure>
+            <div class ="section-content">
+              <h1 class = "hero-title" data-reveal = "top" data-reveal-delay = ".5s"> 
+                this is rogeru.
+              </h1>
+              <p class="hero-text" data-reveal = "top" data-reveal-delay = ".75s">
+                a tech-driven engineer, content creator, and entrepreneur.  
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- 2x2 grid -->
+       <div class = "grid-container">
+        <!-- <section class="interactive-section" aria-label="about"> -->
+          <!-- <div class="container"> -->
+            <a href="content.html" class ="grid-container">
+              <img src="portfolio-images/content.png" alt="content-image" />
+            </a>
+            <a href="experiences.html" class ="grid-container">
+              <img src="portfolio-images/experiences.png" alt="experiences-image" />
+            </a> 
+            <a href="projects.html" class ="grid-container">
+              <img src="portfolio-images/projects.png" alt="projects-image" />
+            </a> 
+            <a href="nuance.html" class ="grid-container">
+              <img src="portfolio-images/nuance.JPEG" alt="nuance" />
+            </a> 
+          <!-- </section> -->
+        <!-- </div> -->
+
+
+
+    </main>
+
+
+    
+  </body>
+
+
+
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Grid</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Explore my work and experiences below:</p>
-  </header>
+<!-- 
 
-  <!-- Grid Container -->
-  <div class="grid-container">
-    <!-- Rectangle Boxes -->
-    <a href="content.html" class="grid-item">Content</a>
-    <a href="projects.html" class="grid-item">Projects</a>
-    <a href="experiences.html" class="grid-item">Experiences</a>
-    <a href="about.html" class="grid-item">About Me</a>
-  </div>
-</body>
-</html>
