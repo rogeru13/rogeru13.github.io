@@ -3,10 +3,9 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>rogeru.</title>
 
       <!----Preloads images-->
-      <link rel="preload" as="image" href="portfolio-images/mainphoto.HEIC">
+      <link rel="preload" as="image" href="portfolio-images/headerimage.png">
 
       <link rel="stylesheet" href="styles.css">
   </head>
@@ -15,20 +14,20 @@
     <header class="header" data-header>
       <div class="container">
         <a href="https://solo.to/rogeru" class ="logo">
-           <img src="portfolio-images/wood.jpg"
-           width = "50">
+           <img src="portfolio-images/headerimage.png"
+           width = "75">
         </a>
         <!-- <nav class="navbar" data-navbar> -->
 
         <ul class="navbar-list">
           <li>
-            <a href = "#" class="navbar-link">home</a>
+            <a href = "index.html" class="navbar-link">home</a>
           </li>
           <li>
-            <a href = "#" class="navbar-link">projects</a>
+            <a href = "pages/bloghome.html" class="navbar-link">blog</a>
           </li>
           <li>
-            <a href = "#" class="navbar-link">experiences</a>
+            <a href = "#" class="navbar-link">info</a>
           </li>
 
       </div>
@@ -39,15 +38,15 @@
         <section class = "section hero" aria-label= "home">
           <div class="container">
             <figure class="cover">
-              <img src="portfolio-images/mainphoto.png" alt="cover"
-              width = '200' >
+              <!-- <img src="portfolio-images/mainphoto.png" alt="cover"
+              width = '200' > -->
             </figure>
             <div class ="section-content">
               <h1 class = "hero-title" data-reveal = "top" data-reveal-delay = ".5s"> 
                 this is rogeru.
               </h1>
               <p class="hero-text" data-reveal = "top" data-reveal-delay = ".75s">
-                a tech-driven engineer, content creator, and entrepreneur.  
+                engineering the future, leveraging media and code.  
               </p>
             </div>
           </div>
@@ -55,24 +54,26 @@
       </article>
 
       <!-- 2x2 grid -->
-       <div class = "grid-container">
-        <!-- <section class="interactive-section" aria-label="about"> -->
+        <div class = "grid-container">
           <!-- <div class="container"> -->
-            <a href="content.html" class ="grid-container">
-              <img src="portfolio-images/content.png" alt="content-image" />
+            <a href ="pages/content.html" class = "images">
+              <img class = "blur" src="portfolio-images/content.png" alt="content-image" />
+              <div class = "text fade"> content creation</div>
             </a>
-            <a href="experiences.html" class ="grid-container">
-              <img src="portfolio-images/experiences.png" alt="experiences-image" />
+            <a href="experiences.html" class ="images">
+            <img class = "blur" src="portfolio-images/experiences.jpg" alt="experiences-image" />
+            <div class = "text fade">experiences</div>
             </a> 
-            <a href="projects.html" class ="grid-container">
-              <img src="portfolio-images/projects.png" alt="projects-image" />
+            <a href="projects.html" class ="images">
+              <img class = "blur" src="portfolio-images/projects.png" alt="projects-image" />
+              <div class = "text fade">projects</div>
             </a> 
-            <a href="nuance.html" class ="grid-container">
-              <img src="portfolio-images/nuance.JPEG" alt="nuance" />
+            <a href="nuance.html" class ="images">
+              <img class = "blur" src="portfolio-images/nuance.jpg" alt="nuance" />
+              <div class = "text fade">nuance</div>
             </a> 
-          <!-- </section> -->
-        <!-- </div> -->
-
+            
+        </div>
 
 
     </main>
