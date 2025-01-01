@@ -1,2 +1,2 @@
 # rogeru-website
-All about the kid.
+Personal Portfolio Website for Roger You.
