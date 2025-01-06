@@ -76,10 +76,12 @@ small {
 
 /* HERO STUFF */
 
+
 .hero .container{
   background-color: rgb(255, 255, 255);
   padding: 100px;
   display: flex;
+  width: 30vh;
 }
 
 .hero-text { text-align: center; }
@@ -399,3 +401,4 @@ h2 a{
   text-decoration: none;  
   color:#f99999;
 }
+
