@@ -4,6 +4,7 @@
 body{
   background: #ffffff;
   padding:20px;
+  box-sizing: border-box; 
 }
 
 *{
@@ -76,18 +77,23 @@ small {
 
 /* HERO STUFF */
 
+.hero {
+  width: 30%;
+  margin: 0 auto;
+  /* padding-right: 50px; */
+}
 
 .hero .container{
-  background-color: rgb(255, 255, 255);
-  padding: 100px;
-  display: flex;
-  width: 30vh;
+  display:flex;
+  justify-content: center; 
+  background-color: #ffffff;
 }
 
 .hero-text { text-align: center; }
 
 main {
   display: flex;
+  gap: 20px;
   justify-content: center; /* Center horizontally */
   align-items: center;    
   height: 100vh;          /* Full viewport height to vertically center */
@@ -96,9 +102,9 @@ main {
 /* ======= GRID STUFF ====== */
 .grid-container {
   --num-cols: 2;
-  --row-height: 300px;
+  --row-height: 350px;
   --gap: 20px;
-  width: 1000px;
+  width: 1200px;
 
   /* box-sizing: border-box; */
   /* padding: var(--gap); */
@@ -153,10 +159,21 @@ images > .text{
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .grid-container {
     --num-cols: 1;
-    --row-height:300px;
+    --row-height:200px;
+  }
+  
+  .hero {
+    margin-bottom: 20px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
   
 }
