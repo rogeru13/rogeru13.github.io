@@ -22,7 +22,7 @@ h1 {
 
 
 p {
-  font-size: 20px; 
+  font-size: 15px; 
 }
 
 .p1{
@@ -102,9 +102,9 @@ main {
 /* ======= GRID STUFF ====== */
 .grid-container {
   --num-cols: 2;
-  --row-height: 350px;
+  --row-height: 270px;
   --gap: 20px;
-  width: 1200px;
+  width: 800px;
 
   /* box-sizing: border-box; */
   /* padding: var(--gap); */
