@@ -102,7 +102,7 @@ main {
 /* ======= GRID STUFF ====== */
 .grid-container {
   --num-cols: 2;
-  --row-height: 300px;
+  --row-height: 350px;
   --gap: 20px;
   width: 1200px;
 
